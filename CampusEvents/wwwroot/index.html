@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Events</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <h1>Campus Events</h1>
+    <p>Find what's happening at the university and save your seat.</p>
+    <nav aria-label="Main views">
+      <button type="button" id="tab-student" aria-pressed="true">Student view</button>
+      <button type="button" id="tab-admin" aria-pressed="false">Admin view</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="student-view" aria-labelledby="catalog-heading">
+      <h2 id="catalog-heading">Upcoming events</h2>
+      <div id="catalog" class="catalog"></div>
+
+      <section class="register" aria-labelledby="register-heading">
+        <h2 id="register-heading">Register for an event</h2>
+        <form id="register-form" novalidate>
+          <div class="field">
+            <label for="full-name">Full name</label>
+            <input id="full-name" name="fullName" type="text" autocomplete="name" required aria-label="Full name" aria-describedby="name-err">
+            <p class="error" id="name-err" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="email">University email</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="juan.delacruz@univ.edu.ph" required aria-label="University email address" aria-describedby="email-hint email-err">
+            <p class="hint" id="email-hint">Must end in @univ.edu.ph</p>
+            <p class="error" id="email-err" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="event-select">Event</label>
+            <select id="event-select" name="eventId" required aria-label="Choose an event" aria-describedby="event-err"></select>
+            <p class="error" id="event-err" role="alert"></p>
+          </div>
+          <button type="submit" class="primary">Register</button>
+          <p id="form-status" class="status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </section>
+
+    <section id="admin-view" aria-labelledby="admin-heading" hidden>
+      <h2 id="admin-heading">Registered attendees</h2>
+      <div id="attendees"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Campus Event Management System prototype. Data is stored in server memory and resets when the app restarts.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
