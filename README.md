@@ -4,12 +4,11 @@
 
 | Member | Name | Assigned Role | Tasks |
 |---|---|---|---|
-| Member 1 | _[Full name]_ | Systems Architect & Prompt Lead | Task 1, Task 5 |
-| Member 2 | _[Full name]_ | Frontend Engineer | Task 2 |
-| Member 3 | _[Full name]_ | Database & Backend Engineer | Task 3 |
-| Member 4 | _[Full name]_ | QA & Security Engineer | Task 4 |
+| Member 1 | Marl Rodriguez | Systems Architect & Prompt Lead | Task 1, Task 5 |
+| Member 2 | Kenneth Gutierrez | Frontend Engineer | Task 2 |
+| Member 3 | Raeven Villegas | Database & Backend Engineer | Task 3 |
+| Member 4 | Andre Montoya | QA & Security Engineer | Task 4 |
 
-_(Group of 3: Members 1 and 3 split Task 4.)_
 
 ## Setup Instructions
 
@@ -195,7 +194,7 @@ Saved at `CampusEvents/backend/RegistrationService.cs`: parameterized query (`@E
 
 **Tools used:** Claude (Anthropic) was used to generate the prompt design, architecture, UI code, SQL schema, Mermaid ERD, C# refactor, unit tests and the first draft of this report.
 
-**Verification:** _[Edit to match what your team actually did.]_ Team members reviewed all generated output, opened the frontend in a browser and tested the form, ran the SQL script on SQL Server, ran `dotnet test`, and checked color contrast with a contrast checker. Corrections are listed below.
+**Verification:**Team members reviewed all generated output, opened the frontend in a browser and tested the form, ran the SQL script on SQL Server, ran `dotnet test`, and checked color contrast with a contrast checker. Corrections are listed below.
 
 ## Group Verification Log
 
